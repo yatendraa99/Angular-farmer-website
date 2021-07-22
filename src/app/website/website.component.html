@@ -1,0 +1,376 @@
+ <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://twitter.com/Yatendraa99" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/yatendraa99" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/yatendra-yadav-b72692146/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/yatendraa99/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>Farmer</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li    class="drop-down"><a >About Us</a> 
+          
+            <ul>
+              <li><a  routerLink="/about/history" fragment="about"> History</a></li>
+              <li><a   href="../assets/Organisational-Chart-DACFW-20-June-2019 (1).pdf" > Organization Chart</a></li>
+            </ul> 
+          </li>
+          <!-- <li><a routerLink="/documents"  fragment="services"> Documents</a></li> -->
+          <li><a routerLink="/media" fragment="portfolio">Media</a></li>
+          <li><a routerLink="/act" fragment="team" >Act&rule</a></li>
+          <li><a routerLink="/cropdetails" (click)="submit()" >Crop Details</a></li>
+          <!-- <li class="drop-down"><a routerLink="/recruitments"  >Recruitments</a>
+            <ul>
+              <li><a href="../assets/drop_down1Coorigendum.pdf">Drop Down 1</a></li>
+              <li><a href="../assets/drop_down2DC_INM_circular.pdf">Drop Down 2</a></li>
+              <li><a href="../assets/drop_down3Director(FI)_0.pdf">Drop Down 4</a></li>
+              <li><a href="../assets/drop_down4scan117.pdf">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#footer">Contact Us</a></li>
+          <li><a routerLink="/login" fragment="login">Login</a></li>
+          <li></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2>कृषि एवं किसान कल्याण मंत्रालय<br>MINISTRY OF AGRICULTURE<span> & FARMERS WELFARE </span></h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+  
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <!-- <img src="../assets/img/intro-img.svg" alt="" class="img-fluid"> -->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+   
+    <router-outlet></router-outlet>
+
+
+    <!--==========================
+      Services Section  Documents
+    ============================-->
+   <!-- #services -->
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+     <!--==========================
+      Features Section
+    ============================-->
+    <!-- <section id="features">
+      <div class="container">
+
+        <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="../assets/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+            <p>
+              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+            </p>
+            <p>
+              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+            </p>
+          </div>
+        </div>
+
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="../assets/img/features-2.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
+            <p>
+             Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
+            </p>
+            <p>
+              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+            </p>
+            <p>
+              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>#about -->
+
+    <!--==========================  
+      Portfolio Section  media
+    ============================-->
+   <!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <!-- #team -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    
+    <!--==========================
+      Pricing Section
+    ============================-->
+   
+
+    <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <section id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h3>Frequently Asked Questions</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Tell me something about IndianFarmer <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                Farming in India. The Indian farmer had discovered and begun farming many spices and sugarcane more than 2500 years ago. Did you know that our country is the 2nd largest producer of agricultural products in the world? In fact, agriculture contributes as much as 6.1% (as of 2017) to our Gross Domestic Product (GDP).
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">What do most farmers in India do? <i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                Its gross irrigated crop area of 82.6 million hectares (215.6 million acres) is the largest in the world. India is among the top three global producers of many crops, including wheat, rice, pulses, cotton, peanuts, fruits and vegetables.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Why are farmers important in India? <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                Agriculture plays a vital role in the Indian economy. Over 70 per cent of the rural households depend on agriculture. Agriculture is an important sector of Indian economy as it contributes about 17% to the total GDP and provides employment to over 60% of the population.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Why India is an agricultural country?<i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                India is an agricultural country. Agriculture and its allied activities act as main source of livelihood for more than 80% population of rural India. It provides employment to approximately 52% of labour. Its contribution to Gross Domestic product (GDP) is between 14 to 15%.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">What do people in India eat? <i class="ion-android-remove"></i></a>
+            <div id="faq5" class="collapse" data-parent="#faq-list">
+              <p>
+                Early diet in India mainly consisted of legumes, vegetables, fruits, grains, dairy products, and honey. Staple foods eaten today include a variety of lentils (dal), whole-wheat flour (aṭṭa), rice, and pearl millet (bājra), which has been cultivated in the Indian subcontinent since 6200 BCE.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">How many farmers died in India? <i class="ion-android-remove"></i></a>
+            <div id="faq6" class="collapse" data-parent="#faq-list">
+              <p>
+                The National Crime Records Bureau of India reported in its 2012 annual report, that 135,445 people committed suicide in India, of which 13,755 were farmers (11.2%). Of these, 5 out of 29 states accounted for 10,486 farmers suicides (76%) – Maharashtra, Andhra Pradesh, Karnataka, Madhya Pradesh and Kerala.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- #faq -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                  <div class="footer-info">
+                    <h3>Farmer</h3>
+                    <p>A farmer (also called an agriculturer) is a person engaged in agriculture, raising living organisms for food or raw materials. The term usually applies to people who do some combination of raising field crops, orchards, vineyards, poultry, or other livestock.</p>
+                  </div>
+
+                  <div class="footer-newsletter">
+                    <h4>Indian farmer</h4>
+                    <p>The Indian farmer had discovered and begun farming many spices and sugarcane more than 2500 years ago. Did you know that our country is the 2nd largest producer of agricultural products in the world? In fact, agriculture contributes as much as 6.1% (as of 2017) to our Gross Domestic Product (GDP). </p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit"  value="Subscribe">
+                    </form>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Terms of service</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+<!-- 
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                      A108 Adam Street <br>
+                      New York, NY 535022<br>
+                      United States <br>
+                      <strong>Phone:</strong> +1 5589 55488 55<br>
+                      <strong>Email:</strong> info@example.com<br>
+                    </p>
+                  </div> -->
+
+                  <div class="social-links">
+                    <a href=" https://twitter.com/Yatendraa99" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/yatendraa99" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/yatendra-yadav-b72692146/" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/yatendraa99/?hl=en" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="form">
+              
+              <h4>Send us a message</h4>
+              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <app-dashboard></app-dashboard> -->
+

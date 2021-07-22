@@ -1,0 +1,31 @@
+<section id="login">
+  
+              <div class="container">
+                  <div class="log">
+    <div class="row">
+          <div class="col-md-6 co-md-offset-3">      
+     <form #m="ngForm">
+      <fieldset>
+                <legend>User Login</legend>   
+  <label for="email">Email:</label> 
+  <input id="email" class="form-control" #em="ngModel" type="text" name="email"[(ngModel)]="email" required (ngChange)="login()" >
+  <span *ngIf="em.touched && em.invalid" style= "color: brown">email is required</span>
+ 
+  <br> <label for="pass">Password:</label>
+  <input id="pass" class="form-control" #pd="ngModel" type="password" name ="password"[(ngModel)]="pass" required>
+  <span *ngIf="pd.touched && pd.invalid" style= "color: brown">password is required</span>
+
+  <br><button class="form-control btn btn-primary"  (click) ="sumbit()">Login</button>
+  
+<h1 routerLink="/register"><button class="form-control btn btn-primary">Register</button></h1>
+</fieldset>
+       </form>    
+             </div>
+                  </div>
+                        </div>
+                  </div>
+
+                       </section>
+
+
+                       

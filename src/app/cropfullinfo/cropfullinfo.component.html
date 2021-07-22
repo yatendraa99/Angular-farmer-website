@@ -1,0 +1,43 @@
+
+<div class="container-fluid">
+    <div class="jumbotron">
+      <h1>{{crop.crop_name}}</h1>
+      <p>{{crop.life_time}}</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">Soil Type</div>
+                <div class="panel-body">{{crop.soil_type|cropSoil}}</div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Water Need</div>
+                <div class="panel-body">{{crop.water_type|cropSoil}}</div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Locations</div>
+                <div class="panel-body">{{crop.place|cropSoil}}</div>
+              </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+          
+            <div class="panel panel-primary">
+                <div class="panel-heading">Description</div>
+                <div class="panel-body">{{crop.desc}}</div>
+            </div>
+         </div>
+    </div>
+
+</div>
+

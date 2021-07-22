@@ -1,0 +1,37 @@
+<div class="form-group">
+<div class="container"> 
+<div class="row">
+<form    #myForm="ngForm" >
+    <label  ><h1> Crop Name:</h1></label><br>
+    <label><input type="text" #y="ngModel"  name="yat"[(ngModel)]="cl.crop_name"></label><br><br>
+    <label  ><h1>Soil Type:</h1></label><br>
+        <label><input type="checkbox" #m="ngModel"  name="sand"[(ngModel)]="cl.soil_type.sand">Sand</label>
+        <label><input type="checkbox" #a="ngModel"  name="silt"[(ngModel)]="cl.soil_type.silt">Silt</label>
+        <label><input type="checkbox" #b="ngModel"  name="clay"[(ngModel)]="cl.soil_type.clay">Clay</label>
+        <br><br>
+     
+         <label  ><h1>Water Type:</h1></label><br>
+        <label><input type="checkbox" #d="ngModel"  name="right"[(ngModel)]="cl.water_type.salty">Salty</label>
+        <label><input type="checkbox" #p="ngModel"  name="yellow"[(ngModel)]="cl.water_type. sline" >sline</label><br><br>
+       
+        <label  ><h1>Description:</h1></label><br>
+        <textarea rows="4" cols="50" #d="ngModel"  name="right"[(ngModel)]="cl.desc"></textarea><br><br>
+
+        <label  ><h1>Place:</h1></label><br>
+        <label><input type="checkbox" #c="ngModel"  name="gray"[(ngModel)]="cl.place.jammu">Jammu</label>
+        <label><input type="checkbox" #n="ngModel"  name="blue"[(ngModel)]="cl.place.delhi" >Delhi</label>
+        <label><input type="checkbox" #p="ngModel"  name="red"[(ngModel)]="cl.place.rajasthan">Rajastnan</label>
+        <label><input type="checkbox" #r="ngModel"  name="orange"[(ngModel)]="cl.place.up" >Uttar Pradesh</label><br><br>
+
+        <label  ><h1>Life Time:</h1></label><br><br> 
+        <label><input type="text" #j="ngModel"  name="on"[(ngModel)]="cl.life_time"></label>
+        <button class="form-control btn btn-primary"   (click)=" onsubmit()">Sumbit</button>
+        
+</form>
+</div>
+</div> 
+ </div>
+
+
+
+
